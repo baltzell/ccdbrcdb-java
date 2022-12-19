@@ -1,0 +1,6 @@
+[submodule "submodules/ccdb"]
+	path = submodules/ccdb
+	url = https://github.com/jeffersonlab/ccdb
+[submodule "submodules/rcdb"]
+	path = submodules/rcdb
+	url = https://github.com/jeffersonlab/rcdb
