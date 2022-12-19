@@ -1,12 +1,11 @@
 
-Testing a combined CCDB+RCDB Java maven build and repository by only including the base git repos as submodules.
+Testing a combined CCDB+RCDB Java maven build and repository by only including the base git repos as submodules.  It builds and results in jars and a maven repo that appear to contain what they should.
 
 * Added one pom.xml
   * Does the kotlin+java build, makes uber jars and maven repository
   * Uses maven central for dependencies instead of the local jars included in the ccdb/rcdb git submodules
     * Pulls in a missing org.omg.CORBA dependency from maven central
 
-It builds and results in jars and a maven repo that appear to contain what they should.
 
 * Issues / Questions
   * Package names
