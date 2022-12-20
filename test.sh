@@ -9,8 +9,10 @@ rcdb = RCDB.createProvider("mysql://rcdb@clasdb.jlab.org/rcdb")
 ccdb.setDefaultRun(run);
 ccdb.connect();
 rcdb.connect();
-System.out.println("CCDB: "+ccdb.getData("/calibration/ec/tmf_window").getBlob());
 System.out.println("RCDB: "+rcdb.getCondition(run,"run_start_time").toTime());
+startTime = System.currentTimeMillis();
+System.out.println("CCDB: "+ccdb.getData("/calibration/ec/tmf_window").getBlob());
+System.out.println(System.currentTimeMillis()-startTime);
 EOF
 )
 
