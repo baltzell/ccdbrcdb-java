@@ -17,5 +17,5 @@ Testing a combined CCDB+RCDB Java maven build and repository by only including t
     * I'd propose we change the name of the maven repo to ccdb-rcdb, and then switch from CcdbProvider to CCDB at the same time in COATJAVA
     * Changing those would of course require source code changes, in one place or another
   * The submodules use different subdirectory structures for the kotlin source
-  * Previously when I built a ccdb jar in IntelliJ, I had to put the kotlin runtime jar in the classpath for groovy
+  * Previously when I built a ccdb jar in IntelliJ, I had to put the kotlin runtime jar in the classpath for groovy;  confirmed that's not the case here
 
