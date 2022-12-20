@@ -16,5 +16,5 @@ System.out.println(System.currentTimeMillis()-startTime);
 EOF
 )
 
-groovy -cp ./target/ccdb-rcdb-1.0-SNAPSHOT-with-dependencies.jar -e " $groovy "
+groovy -cp ./target/ccdbrcdb-1.0-SNAPSHOT-with-dependencies.jar -e " $groovy "
 
