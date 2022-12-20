@@ -51,8 +51,12 @@
                         </goals>
                         <configuration>
                             <sourceDirs>
+                                <source>src/main/kotlin/org/jlab/ccdb</source>
+                                <source>src/main/kotlin/org/jlab/rcdb</source>
+                                <!--
                                 <source>submodules/ccdb/java/src/org.jlab.ccdb</source>
                                 <source>submodules/rcdb/java/src/org/rcdb</source>
+                                -->
                             </sourceDirs>
                         </configuration>
                     </execution>
