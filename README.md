@@ -1,6 +1,6 @@
 ### Java CCDB+RCDB wrapper repository
 
 Two git submodules, plus one Maven POM to:
-* compiles the submodules' Kotlin source code and deploys a remote maven repository
-* uses maven central for dependencies instead of the local jars included in the submodules
-* updates to more recent dependency versions and pulls in a missing dependency, org.omg.COBRA
+* compile the submodules' Kotlin source code and deploy a remote maven repository
+* use Maven central for dependencies instead of the local jars included in the submodules
+* update to more recent dependency versions and pull in a missing dependency, org.omg.COBRA
