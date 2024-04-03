@@ -32,19 +32,19 @@ public class SQLiteProvider(connectionString:String): JDBCProvider(connectionStr
 
         prsConditionType = con.prepareStatement("SELECT id, name, value_type FROM condition_types")
         prsCondition = con.prepareStatement("SELECT id, bool_value, float_value, int_value, text_value, time_value FROM conditions WHERE run_number = ? AND condition_type_id = ?")
-        prsFileNames = con.prepareStatement("SELECT files.path AS files_path "
-                                                + "FROM files, files_have_runs AS files_have_runs_1 "
-                                                + "WHERE files.id = files_have_runs_1.files_id "
-                                                + "AND ? = files_have_runs_1.run_number "
-                                                + "ORDER BY files.id DESC")
-        prsFile = con.prepareStatement("SELECT files.id AS files_id, "
-                                           + "       files.path AS files_path, "
-                                           + "       files.sha256 AS files_sha256, "
-                                           + "       files.content AS files_content "
-                                           + "FROM files, files_have_runs AS files_have_runs_1 "
-                                           + "WHERE files.path = ? AND files.id = files_have_runs_1.files_id "
-                                           + "      AND ? = files_have_runs_1.run_number "
-                                           + "ORDER BY files.id DESC")
+//        prsFileNames = con.prepareStatement("SELECT files.path AS files_path "
+//                                                + "FROM files, files_have_runs AS files_have_runs_1 "
+//                                                + "WHERE files.id = files_have_runs_1.files_id "
+//                                                + "AND ? = files_have_runs_1.run_number "
+//                                                + "ORDER BY files.id DESC")
+//        prsFile = con.prepareStatement("SELECT files.id AS files_id, "
+//                                           + "       files.path AS files_path, "
+//                                           + "       files.sha256 AS files_sha256, "
+//                                           + "       files.content AS files_content "
+//                                           + "FROM files, files_have_runs AS files_have_runs_1 "
+//                                           + "WHERE files.path = ? AND files.id = files_have_runs_1.files_id "
+//                                           + "      AND ? = files_have_runs_1.run_number "
+//                                           + "ORDER BY files.id DESC")
         postConnect()
     }
 }
