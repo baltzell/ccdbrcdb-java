@@ -1,0 +1,11 @@
+--- ./MySqlProvider.kt	2024-04-19 18:48:29.741736000 -0400
++++ ./rcdb/java/src/org/rcdb/MySqlProvider.kt	2024-04-19 18:48:36.492442000 -0400
+@@ -9,7 +9,7 @@
+ 
+     override fun connect() {
+         // load the sqlite-JDBC driver using the current class loader
+-        Class.forName("com.mysql.jdbc.Driver");
++        Class.forName("com.mysql.cj.jdbc.Driver");
+ 
+         //first check for uri type
+         val typePos = connectionString.indexOf("mysql://")

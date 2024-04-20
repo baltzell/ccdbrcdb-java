@@ -1,5 +1,0 @@
-cp -f ./patch/SQLiteProvider.kt ./rcdb/java/src/org/rcdb/SQLiteProvider.kt
-
-sed -i 's/com.mysql.jdbc.Driver/com.mysql.cj.jdbc.Driver/' ./ccdb/java/src/org.jlab.ccdb/MySqlProvider.kt
-sed -i 's/com.mysql.jdbc.Driver/com.mysql.cj.jdbc.Driver/' ./rcdb/java/src/org/rcdb/MySqlProvider.kt
-
